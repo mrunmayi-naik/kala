@@ -1,0 +1,40 @@
+<script src="https://aframe.io/releases/0.9.2/aframe.min.js"></script>
+<script src="https://cdn.rawgit.com/jeromeetienne/AR.js/1.6.0/aframe/build/aframe-ar.js"></script>
+<script>
+AFRAME.registerComponent('vidhandler', {
+    schema: {
+      video: {type: 'selector'}
+    },
+    init: function() {
+        this.video = this.data.video
+        this.video.pause()
+    },
+    tick: function() {
+        if (this.el.object3D.visible == true) {
+            if (!this.toggle) {
+                this.toggle = true;
+                this.video.play()
+            }
+        } else {
+            this.toggle = false;
+            this.video.pause()
+        }
+    }
+});
+</script>
+<a-scene embedded arjs>
+      <a-assets>
+        <video id="vid" loop="true" crossorigin="anonymous" 
+               src="https://cdn.glitch.global/db27dc69-b54b-4c02-8111-ba4fc7bb577e/frame2.mp4?v=1684247422813"></video>
+        <video id="videonew" loop="true" crossorigin="anonymous" 
+               src="https://cdn.glitch.global/a2d69485-7937-4ff6-8f53-382312ef3d29/frame1.mp4?v=1684234290641"></video>
+      </a-assets>
+      <a-marker preset="hiro" vidhandler="video: #vid">
+        <a-plane position="1 0 1" width="8" height="5" rotation="-90 0 0" material="src: #vid"></a-plane>
+      </a-marker>
+  
+      <a-marker preset="kanji" vidhandler="video: #videonew">
+        <a-plane position="1 0 1" width="8" height="5" rotation="-90 0 0" material="src: #videonew"></a-plane>
+      </a-marker>
+  <a-entity camera></a-entity>
+</a-scene>
