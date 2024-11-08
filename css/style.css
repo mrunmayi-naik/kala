@@ -138,6 +138,7 @@ p {
     font-weight: 300;
     font-size: 15px;
     line-height: 24px;
+    color: #fff;
 }
 
 a {
@@ -155,6 +156,131 @@ a,
     -ms-transition: all .3s ease-in-out;
     -o-transition: all .3s ease-in-out;
     transition: all .3s ease-in-out;
+}
+
+.hero {
+    padding: 40px 40px 40px 40px;
+    margin-top: 20px;
+    display: flex;
+    padding-top: 80px;
+    position: relative;
+    z-index: 100;
+}
+
+.hero p{
+    padding: 10px 30px;
+    margin-top: 10px;
+    font-size: 20px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #ffffff;
+}
+
+.herotxt h1{
+    font-weight: bolder;
+    font-size: 55px;
+    color: #ffffff;
+    font-family: "Poetsen One", sans-serif;
+    margin-top: 10px;
+}
+.herotxt h2{
+    font-size: 22px;
+    font-family: "Roboto Condensed", sans-serif;
+    color: #FC7643;
+}
+.herotxt{
+    margin-top: 20px;
+   text-align: center;
+   padding: 20px;
+   background-color:#307930;
+   
+}
+.herophoto {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 10px;
+    margin-right: 30px;
+   
+}
+.herophoto img {
+    width: 1500px;
+    height: auto;
+    border-radius: 20px;
+    margin-right: 20px;
+}
+
+.demonstration {
+    margin-top: 40px; /* Space above the demonstration section */
+    text-align: center;
+    font-family: "Roboto Condensed", sans-serif;
+}
+.demonstration h2{
+    font-size: 55px;
+}
+.demonstration p{
+    color: #000;
+    font-size: 22px;
+    padding: 0px 70px 0px 70px;
+}
+
+.video-container {
+    margin: 20px 0; /* Space above and below the video */
+    max-width: 100%; /* Make the video responsive */
+    text-align:  center;
+    padding: 50px;
+}
+
+video {
+    width: 70%; /* Full width for video */
+    height: auto; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+    padding: 50px;
+}
+
+.download-section {
+     /* Space above the download section */
+    padding: 40px 20px 40px 20px;
+    background-color: #307930;
+    border: 1px solid #b3d7ff; /* Light border */
+    border-radius: 5px; /* Rounded corners */
+    text-align: center; /* Center the content */
+    margin-bottom: 50px;
+}
+.download-section h2{
+    font-size: 30px;
+}
+.download-image {
+    margin-top: 20px; /* Space above the image */
+}
+
+.download-image img {
+    max-width: 80%; /* Limit image width */
+    height: 300px; /* Maintain aspect ratio */
+    border: 1px solid #ccc; /* Optional border */
+    border-radius: 5px; /* Rounded corners */
+}
+.download-button{
+    width: 170px;
+   
+    margin-top: 30px;
+}
+
+.download-button  {
+    width: 100%;
+    font-size: 18px;
+    color: #000000;
+    background-color: transparent;
+    border: 1px solid #0b1b0c;
+    padding: 10px 5px;
+    text-align: center;
+    font-weight: 500;
+    margin-right: 40px;
+    margin-left: 40px;
+}
+
+.download-button:hover {
+    color: #ffffff;
+    background-color: #9eac97;
 }
 
 img {
@@ -283,7 +409,7 @@ button {
 
 .navbar-light .navbar-nav .nav-link:focus,
 .navbar-light .navbar-nav .nav-link:hover {
-    color: #202c1e;
+    color: #080808;
 }
 
 
@@ -315,7 +441,7 @@ button {
     width: 80%;
     float: left;
     font-size: 16px;
-    color: #307930;
+    color: #060706;
     margin: 0px;
     padding-top: 30px;
     font-weight: 500;
@@ -391,11 +517,12 @@ button {
 }
 
 #carouselExampleIndicators .img-re-size img{
-    width: 440px;
+    width: 600px;
 }
 
 .carousel-item img {
     height: 400px;
+    width: 500px;
 }
 
 
@@ -878,10 +1005,10 @@ input.email_text::placeholder {
     background: #307930;
 }
 
-/*a.facebookBtn.smGlobalBtn.active {
+a.facebookBtn.smGlobalBtn.active {
     background: #307930;
 }
-*/
+
 
 /* twitter button class*/
 
