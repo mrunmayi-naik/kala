@@ -283,6 +283,103 @@ video {
     background-color: #9eac97;
 }
 
+
+.hero, .herophoto, .herotxt, .demonstration, .video-container, .download-section {
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+/* Adjust .hero layout for smaller screens */
+@media (max-width: 768px) {
+    .hero {
+        flex-direction: column;
+        padding: 20px;
+    }
+
+    .herophoto img {
+        width: 100%; /* Full width on small screens */
+        margin-right: 0;
+    }
+
+    .herotxt h1 {
+        font-size: 35px;
+    }
+
+    .herotxt p {
+        font-size: 16px;
+    }
+}
+
+/* Adjust .video-container for smaller screens */
+@media (max-width: 768px) {
+    .video-container video {
+        width: 90%; /* Reduce width to fit smaller screens */
+        padding: 20px; /* Reduce padding */
+    }
+}
+
+/* Adjust .download-section for smaller screens */
+@media (max-width: 768px) {
+    .download-section h2 {
+        font-size: 24px;
+    }
+
+    .download-image img {
+        max-width: 100%; /* Adjust image size */
+        height: auto; /* Maintain aspect ratio */
+        margin-bottom: 20px;
+    }
+
+    .download-button {
+        margin-left: 0;
+        margin-right: 0;
+        width: 100%; /* Full width for buttons */
+    }
+}
+
+/* Adjust font sizes for even smaller screens (e.g., mobile phones) */
+@media (max-width: 480px) {
+    .herotxt h1 {
+        font-size: 28px;
+    }
+
+    .herotxt p {
+        font-size: 14px;
+    }
+
+    .demonstration h2 {
+        font-size: 32px;
+    }
+
+    .demonstration p {
+        padding: 0 20px;
+        font-size: 16px;
+    }
+
+    .video-container video {
+        width: 100%; /* Full width on very small screens */
+        padding: 10px;
+    }
+    
+    .download-image img{
+        width: 500px;
+    }
+
+    .download-section {
+        padding: 20px;
+    }
+
+    .download-section h2 {
+        font-size: 20px;
+    }
+
+    .download-button {
+        font-size: 16px;
+        padding: 8px;
+    }
+}
+
+
 img {
     max-width: 100%;
     height: auto;
